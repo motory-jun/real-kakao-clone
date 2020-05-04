@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.header .header__title {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.header__icon {
+  font-size: 20px;
+  margin-left: 25px;
+  cursor: pointer;
+  position: relative;
+}
+
+.header__plus {
+  position: absolute;
+  top: 4px;
+  right: -5px;
+  background-color: white;
+  font-size: 13px;
+  font-weight: 800;
+  width: 13px;
+  height: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.header__header-column {
+  display: flex;
+  align-items: center;
+}
+
+.header__back-btn {
+  font-size: 18px;
+  margin-right: 17px;
+}

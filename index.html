@@ -9,6 +9,7 @@
       integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Chats | kakao clone</title>
   </head>
   <body>
@@ -34,21 +35,27 @@
         </span>
         <span class="header__icon">
           <i class="far fa-comment"></i>
+          <span class="header__plus">
+            <!-- <i class="fas fa-plus"></i> -->
+            +
+          </span>
         </span>
         <span class="header__icon">
-          <i class="fas fa-cog"></i>
+          <a href="settings3.html">
+            <i class="fas fa-cog"></i>
+          </a>
         </span>
       </div>
     </header>
     <main class="chats">
-      <ul class="chats__list">
-        <li class="chats__chat">
-          <a href="chat.html">
+      <a href="chat.html">
+        <ul class="chats__list">
+          <li class="chats__chat">
             <div class="chat__column">
               <img
                 src="images/avatar.png"
                 alt=""
-                class="chat__avatar g-avatar"
+                class="chat__avatar m-avatar"
               />
               <div class="chat__content">
                 <span class="chat__username">
@@ -62,31 +69,34 @@
             <div class="chat__column">
               <span class="chat__timestamp">Yesterday</span>
             </div>
+          </li>
+        </ul>
+      </a>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="friends.html" class="nav__list-link">
+            <i class="far fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
+            <i class="fas fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="find.html" class="nav__list-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
           </a>
         </li>
       </ul>
-    </main>
-    <nav class="nav">
-      <li class="nav__list-item">
-        <a href="friends.html" class="nav__list-link">
-          <i class="far fa-user"></i>
-        </a>
-      </li>
-      <li class="nav__list-item">
-        <a href="index.html" class="nav__list-link">
-          <i class="fas fa-comment"></i>
-        </a>
-      </li>
-      <li class="nav__list-item">
-        <a href="find.html" class="nav__list-link">
-          <i class="fas fa-search"></i>
-        </a>
-      </li>
-      <li class="nav__list-item">
-        <a href="more.html" class="nav__list-link">
-          <i class="fas fa-ellipsis-h"></i>
-        </a>
-      </li>
     </nav>
   </body>
 </html>

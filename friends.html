@@ -9,6 +9,7 @@
       integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Friends | kakao clone</title>
   </head>
   <body>
@@ -33,14 +34,21 @@
           <i class="fas fa-search"></i>
         </span>
         <span class="header__icon">
-          <i class="fas fa-cog"></i>
+          <a href="settings2.html">
+            <i class="fas fa-cog"></i>
+          </a>
         </span>
       </div>
     </header>
-    <header class="friends__header">
+    <main class="friends">
+      <header class="friends__header">
         <div class="friends__friend friend friend--lg">
           <div class="friend__column">
-            <img src="images/avatar1.jpg" alt="" class="g-avatar friend__avatar">
+            <img
+              src="images/avatar1.jpg"
+              alt=""
+              class="g-avatar friend__avatar"
+            />
             <div class="friend__content">
               <span class="friend__name">
                 백준열
@@ -56,61 +64,116 @@
         <h5 class="friends__title">Plus friend</h5>
         <div class="friends__friend friend">
           <div class="friend__column">
-          <img src="images/avatar2.png" alt="" class="g-avatar friend__avatar">
-          <div class="friend__content">
-            <span class="friend__name">
-             Plus Friend
-            </span>
+            <img src="images/avatar2.png" alt="" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">Plus Friend</span>
+            </div>
           </div>
-         </div>
         </div>
       </div>
       <ul class="friends__list">
-        <h5 class="friends__title">Friends 14</h5>
-        <li class="friends__friend friend">
-          <div class="friend__column">
-          <img src="images/avatar3.jpg" alt="" class="g-avatar friend__avatar">
-          <div class="friend__content">
-            <span class="friend__name">
-              유노윤호
-            </span>
-            <span class="friend__status">
-              열정은 나를 만든다
-            </span>
-          </div>
-        </div>
-        <div class="friend__column">
-          <div class="friend__now-listening">
-            <span>
-              tomorrow tonight - Loote
-            </span>
-            <i class="fas fa-play"></i>
-          </div>
-        </div>
-        </li>
+        <h5 class="friends__title">Friends 4</h5>
+        <section class="friends__child">
+          <li class="friends__friend friend">
+            <div class="friend__column">
+              <img src="images/avatar3.jpg" alt="" class="friend__avatar" />
+              <div class="friend__content">
+                <span class="friend__name">
+                  유노윤호
+                </span>
+                <span class="friend__status">
+                  열정은 나를 만든다
+                </span>
+              </div>
+            </div>
+            <div class="friend__column">
+              <div class="friend__now-listening">
+                <span>
+                  tomorrow tonight - Loote
+                  <i class="fas fa-play"></i>
+                </span>
+              </div>
+            </div>
+          </li>
+        </section>
+        <section class="friends__child">
+          <li class="friends__friend friend">
+            <div class="friend__column">
+              <img src="images/avatar4.jpg" alt="" class="friend__avatar" />
+              <div class="friend__content">
+                <span class="friend__name">
+                  희령
+                </span>
+                <span class="friend__status">
+                  코로나 극복!
+                </span>
+              </div>
+            </div>
+          </li>
+        </section>
+        <section class="friends__child">
+          <li class="friends__friend friend">
+            <div class="friend__column">
+              <img src="images/avatar5.jpg" alt="" class="friend__avatar" />
+              <div class="friend__content">
+                <span class="friend__name">
+                  주빈
+                </span>
+                <span class="friend__status">
+                  ...
+                </span>
+              </div>
+            </div>
+            <div class="friend__column">
+              <div class="friend__now-listening">
+                <span>
+                  아무노래 - zico
+                  <i class="fas fa-play"></i>
+                </span>
+              </div>
+            </div>
+          </li>
+        </section>
+        <section class="friends__child">
+          <li class="friends__friend friend">
+            <div class="friend__column">
+              <img src="images/avatar6.png" alt="" class="friend__avatar" />
+              <div class="friend__content">
+                <span class="friend__name">
+                  수진
+                </span>
+                <span class="friend__status">
+                  우드카빙 허니잼
+                </span>
+              </div>
+            </div>
+          </li>
+        </section>
       </ul>
     </main>
     <nav class="nav">
-      <li class="nav__list-item">
-        <a href="friends.html" class="nav__list-link">
-          <i class="fas fa-user"></i>
-        </a>
-      </li>
-      <li class="nav__list-item">
-        <a href="index.html" class="nav__list-link">
-          <i class="far fa-comment"></i>
-        </a>
-      </li>
-      <li class="nav__list-item">
-        <a href="find.html" class="nav__list-link">
-          <i class="fas fa-search"></i>
-        </a>
-      </li>
-      <li class="nav__list-item">
-        <a href="more.html" class="nav__list-link">
-          <i class="fas fa-ellipsis-h"></i>
-        </a>
-      </li>
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="friends.html" class="nav__list-link">
+            <i class="fas fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link">
+            <i class="far fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="find.html" class="nav__list-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
     </nav>
   </body>
 </html>
